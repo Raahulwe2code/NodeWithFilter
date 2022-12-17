@@ -3,10 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser'
 
 import { deleteUser, getAllUser, getUserById, saveUser, searchAPI, updateUser } from '../Controllers/UserController.js';
-import multer from "multer";
-import path from 'path'
 
-import {fileURLToPath} from 'url'
  const app=express();
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
