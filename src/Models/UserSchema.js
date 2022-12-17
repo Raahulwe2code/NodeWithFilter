@@ -1,12 +1,15 @@
-import mongoose  from "mongoose";
-
+import mongoose  from 'mongoose' 
   const UserSchema=new mongoose.Schema({
-    name:{type:String, required:true},
-    dob:{type:Date, required:true},
-    city:{type:String, required:true},
-    desc:{type:String, required:true},
-    email:{type:String, required:true},
-    mobile:{type:String, required:true}
+    name:{type:String},
+    dob:{type:Date},
+    city:{type:String },
+    desc:{type:String },
+    email:{type:String },
+    mobile:{type:String },
+    gender:{type:String},
+    hobbies:{type:Array},
+ 
+
   })
 
   const userModel= mongoose.model("user", UserSchema)

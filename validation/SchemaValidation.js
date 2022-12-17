@@ -5,6 +5,9 @@ export const userSchema= Joi.object({
     city:Joi.string().required(),
     desc:Joi.string().required(),
     email:Joi.string().required(),
-    mobile: Joi.string().required()
+    mobile: Joi.string().required(),
+    gender:Joi.string().required(),
+    hobbies:Joi.array().required(),
+ 
 
 })
